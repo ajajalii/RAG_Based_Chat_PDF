@@ -184,6 +184,8 @@ def chat_with_citations(document_id: str, user_message: str) -> dict[str, Any]:
     for h in hits:
         context_blocks.append(f"[Page {h['page']}]\n{h['text']}")
     context = "\n\n---\n\n".join(context_blocks)
+    
+    
 
     system = (
         "You are a helpful assistant that answers ONLY using the provided PDF excerpts. "
