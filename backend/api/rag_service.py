@@ -205,6 +205,7 @@ def chat_with_citations(document_id: str, user_message: str) -> dict[str, Any]:
 
     seen: set[int] = set()
     citations: list[dict[str, Any]] = []
+    
     for h in hits[:6]:
         p = h["page"]
         if p in seen:
