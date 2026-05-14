@@ -179,7 +179,6 @@ def chat_with_citations(document_id: str, user_message: str) -> dict[str, Any]:
             "answer": "I could not find relevant passages in this PDF. Try rephrasing or upload a text-based PDF.",
             "citations": [],
         }
-
     context_blocks = []
     for h in hits:
         context_blocks.append(f"[Page {h['page']}]\n{h['text']}")
