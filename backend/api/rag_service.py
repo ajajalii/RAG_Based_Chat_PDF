@@ -17,7 +17,6 @@ from .pdf_extract import extract_pages_text
 CHUNK_SIZE = 900
 CHUNK_OVERLAP = 120
 
-
 def _chunk_page_text(page_num: int, text: str) -> list[dict[str, Any]]:
     t = text.strip()
     if not t:
