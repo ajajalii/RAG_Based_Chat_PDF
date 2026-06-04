@@ -5,7 +5,6 @@ import re
 import uuid
 from pathlib import Path
 from typing import Any
-
 import chromadb
 from chromadb.utils import embedding_functions
 from django.conf import settings
