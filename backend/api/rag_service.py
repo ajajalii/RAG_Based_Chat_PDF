@@ -12,7 +12,6 @@ from google import genai
 from google.genai import errors as genai_errors
 from google.genai import types
 from .pdf_extract import extract_pages_text
-
 CHUNK_SIZE = 900
 CHUNK_OVERLAP = 120
 
