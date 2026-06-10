@@ -214,9 +214,6 @@ def chat_with_citations(document_id: str, user_message: str) -> dict[str, Any]:
 
 
 
-
-
-
 def summarize_document(document_id: str) -> dict[str, Any]:
     if not _gemini_api_key():
         raise RuntimeError(
@@ -271,6 +268,8 @@ def summarize_document(document_id: str) -> dict[str, Any]:
         "summary": [str(s).strip() for s in summary if str(s).strip()][:10],
         "suggested_questions": [str(q).strip() for q in questions if str(q).strip()][:8],
     }
+
+
 
 
 def delete_document_index(document_id: str) -> None:
