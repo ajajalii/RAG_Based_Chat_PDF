@@ -152,6 +152,7 @@ export default function App() {
       setChatting(false);
     }
   };
+  
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
