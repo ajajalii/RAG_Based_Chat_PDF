@@ -153,7 +153,6 @@ export default function App() {
     }
   };
   
-  
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
