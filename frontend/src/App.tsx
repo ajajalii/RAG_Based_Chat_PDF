@@ -95,6 +95,7 @@ export default function App() {
       setFilename(res.filename);
       setSizeBytes(res.size_bytes);
       setPageNumber(1);
+      
       setSummary([]);
       setSuggested([]);
       setMessages([]);
