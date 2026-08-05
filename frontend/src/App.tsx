@@ -82,6 +82,8 @@ export default function App() {
 
   const onPickFile = () => fileInputRef.current?.click();
 
+  
+
   const onFile = async (file: File | null) => {
     if (!file) return;
     setError(null);
